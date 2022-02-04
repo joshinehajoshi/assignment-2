@@ -3,10 +3,15 @@
 }
 
 .card-wrapper {
-    margin-top: 2rem;
+    padding-top: 2rem;
+    background-color: black;
 }
 
 .card-div {
     display: flex;
     flex-wrap: wrap;
+}
+
+.card {
+    margin: 1rem
 }
