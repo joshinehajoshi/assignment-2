@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../styling/home.css';
-import { Navbar, Container, NavDropdown, Nav, FormControl, Button } from 'react-bootstrap'
+import { Navbar, Container, NavDropdown, Nav, FormControl, Button, Card } from 'react-bootstrap'
 
 function Home() {
 
@@ -50,9 +50,21 @@ function Home() {
                 </Navbar.Collapse>
             </Container>
             </Navbar>
-            <div>
+            <div className="card-wrapper">
                 <Container>
-                <Button onClick={apiCall}>Okay</Button>
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512__340.jpg" />
+                        <Card.Body>
+                            <Card.Title>Card Id</Card.Title>
+                            <Card.Text>
+                            <h5>Name</h5>
+                            <h5>Item</h5>
+                            <h5>Address</h5>
+                            <h5>PinCode</h5>
+                            </Card.Text>
+                            <Button variant="primary">Go somewhere</Button>
+                        </Card.Body>
+                    </Card>
                 </Container>
             </div>
         </div>;
